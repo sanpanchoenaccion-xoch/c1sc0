@@ -665,3 +665,27 @@ button {
 .pdf-btn-expand:hover .texto {
     opacity: 1;
 }
+
+.btn-altepetl {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow: hidden;
+    width: 50px; /* Solo muestra el ícono */
+    transition: width 0.4s ease;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.btn-altepetl:hover {
+    width: 260px; /* Se expande al pasar el mouse */
+}
+
+.btn-altepetl .texto {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.btn-altepetl:hover .texto {
+    opacity: 1;
+}
