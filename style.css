@@ -635,3 +635,33 @@ button {
 .btn-altepetl:hover .texto {
     opacity: 1;
 }
+
+.pdf-btn-expand {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-decoration: none;
+    
+    background: #4CAF50;
+    color: white;
+    padding: 12px;
+    border-radius: 25px;
+    
+    transition: width 0.4s ease;
+}
+
+.pdf-btn-expand:hover {
+    width: 230px;
+}
+
+.pdf-btn-expand .texto {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pdf-btn-expand:hover .texto {
+    opacity: 1;
+}
