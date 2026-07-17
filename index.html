@@ -441,44 +441,51 @@
 
     <!-- ================= MENU ================= -->
 
-    <nav class="menu-flotante">
+    <nav id="menu-principal" class="vista">
 
-    <button class="menu-item" onclick="mostrarVista('altepetl')">
-        <span class="icono">🌲</span>
-        <span class="texto">Programa Altépetl</span>
-    </button>
+        <div class="grid-botones">
 
-    <button class="menu-item" onclick="mostrarVista('pilares1')">
-        <span class="icono">🍃</span>
-        <span class="texto">Pilares</span>
-    </button>
+            <button class="btn-altepetl" onclick="mostrarVista('altepetl')">
+            <span class="icono">🌲</span>
+            <span class="texto">Programa Altépetl Bienestar</span>
+            </button>
+			
+			<button class="btn-pilares1" onclick="mostrarVista('pilares1')">
+            <span class="icono">🍃</span>
+            <span class="texto">Pilares</span>
+            </button>
+			
+			<button class="btn-vistazos1" onclick="mostrarVista('vistazos1')">
+            <span class="icono">🐦</span>
+            <span class="texto">Vistazo</span>
+            </button>
+			
+		    <button class="btn-eventos1" onclick="mostrarVista('eventos1')">
+            <span class="icono">🍂</span>
+            <span class="texto">Próximos eventos</span>
+			<!-- <span class="notificacion"></span> -->
+            </button>
 
-    <button class="menu-item" onclick="mostrarVista('vistazos1')">
-        <span class="icono">🐦</span>
-        <span class="texto">Vistazo</span>
-    </button>
+            <button class="btn-cursos1" onclick="mostrarVista('cursos1')">
+            <span class="icono">💻</span>
+            <span class="texto">Cursos</span>
+			<!-- <span class="notificacion"></span> -->
+            </button>
+			
+			
 
-    <button class="menu-item" onclick="mostrarVista('eventos1')">
-        <span class="icono">🍂</span>
-        <span class="texto">Próximos eventos</span>
-    </button>
+            <a class="pdf-btn" href="programaordenamiento.pdf" target="_blank">
+                🌿 Ordenamiento ecológico
+            </a>
+			
+			<a class="pdf-btn" href="presupuestoparticiptivo.pdf" target="_blank">
+                🏥 Presupuesto participativo
+            </a>
 
-    <button class="menu-item" onclick="mostrarVista('cursos1')">
-        <span class="icono">💻</span>
-        <span class="texto">Cursos</span>
-    </button>
 
-    <a class="menu-item" href="programaordenamiento.pdf" target="_blank">
-        <span class="icono">🌿</span>
-        <span class="texto">Ordenamiento ecológico</span>
-    </a>
+        </div>
 
-    <a class="menu-item" href="presupuestoparticiptivo.pdf" target="_blank">
-        <span class="icono">🏥</span>
-        <span class="texto">Presupuesto participativo</span>
-    </a>
-
-</nav>
+    </nav>
 
     <!-- ================= Altepetl ================= -->
 
