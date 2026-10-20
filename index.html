@@ -1005,7 +1005,6 @@
     </script>
 
 
-
 <div id="lightbox" class="lightbox" role="dialog"
      aria-modal="true" aria-label="Fotografía ampliada">
 
@@ -1018,48 +1017,6 @@
     <img id="lightboxImagen" src="" alt="Fotografía ampliada">
 
 </div>
-
-
-
-const lightbox = document.getElementById("lightbox");
-const lightboxImagen = document.getElementById("lightboxImagen");
-const lightboxCerrar = document.getElementById("lightboxCerrar");
-
-// Detectar clic en cualquier foto de la galería
-document.querySelectorAll(".galeria-vistazos img").forEach((foto) => {
-    foto.addEventListener("click", () => {
-        lightboxImagen.src = foto.src;
-        lightboxImagen.alt = foto.alt || "Fotografía ampliada";
-        lightbox.classList.add("activo");
-        document.body.style.overflow = "hidden";
-        lightboxCerrar.focus();
-    });
-});
-
-// Función para cerrar la imagen
-function cerrarLightbox() {
-    lightbox.classList.remove("activo");
-    lightboxImagen.src = "";
-    document.body.style.overflow = "";
-}
-
-// Cerrar con la X
-lightboxCerrar.addEventListener("click", cerrarLightbox);
-
-// Cerrar al hacer clic fuera de la foto
-lightbox.addEventListener("click", (evento) => {
-    if (evento.target === lightbox) {
-        cerrarLightbox();
-    }
-});
-
-// Cerrar al presionar Escape
-document.addEventListener("keydown", (evento) => {
-    if (evento.key === "Escape" && lightbox.classList.contains("activo")) {
-        cerrarLightbox();
-    }
-});
-
 
 
 
